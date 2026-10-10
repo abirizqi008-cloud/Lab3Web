@@ -21,8 +21,8 @@
 2. Membuat dokumen HTML.
 
     <img src="images/Gambar2.jpg" width="250">
-    ## Berikut adalah penjelasan bagian per bagian dari kode dokumen HTML di atas:
 
+    ## Berikut adalah penjelasan bagian per bagian dari kode dokumen HTML di atas:
     - ** `<!DOCTYPE html>` & `<html lang="en">`**: Menunjukkan bahwa dokumen ini menggunakan standar HTML5 dengan bahasa utama bahasa Inggris.
     - ** `<head>`**: Bagian kepala dokumen yang berisi informasi pengaturan browser (seperti pengenal karakter UTF-8 dan ukuran layar/viewport) serta judul halaman web (`<title>`).
     - ** `<body>`**: Badan dokumen tempat seluruh konten yang akan tampil di layar browser diletakkan.
@@ -39,8 +39,8 @@
 3. Mendeklarasi CSS Internal
 
     <img src="images/Gambar4.jpg" width="250">
-    ## Berikut adalah penjelasan baris per baris untuk setiap aturan style CSS yang digunakan:
 
+    ## Berikut adalah penjelasan baris per baris untuk setiap aturan style CSS yang digunakan:
     - **`body { font-family: 'Open Sans', sans-serif; }`**: Mengatur jenis huruf (*font*) utama di seluruh halaman web menggunakan jenis `'Open Sans'`, dan jika tidak tersedia akan menggunakan jenis huruf standar *sans-serif*.
     - **`header { min-height: 80px; border-bottom: 1px solid #77CCEF; }`**: Mengatur tinggi minimum area kepala halaman (*header*) sebesar 80 piksel dan menambahkan garis bawah tipis berwarna biru muda (`#77CCEF`).
     - **`h1 { font-size: 24px; color: #0F189F; text-align: center; padding: 20px 10px; }`**: Mengatur ukuran teks judul utama (`<h1>`) menjadi 24 piksel, memberikan warna biru tua, membuat posisi teks berada di tengah (*center*), serta memberikan jarak ruang di dalam (*padding*) atas-bawah 20px dan kiri-kanan 10px.
@@ -52,8 +52,8 @@
 4. Membuat Inline CSS
 
     <img src="images/Gambar6.jpg" width="250">
+
     ## Berikut adalah penjelasan Atribut Style Paragraf (Warna Khusus):
-    
     - **`<p style="...">`**: Menambahkan atribut *inline CSS* langsung ke dalam tag paragraf untuk mengatur gaya tampilan khusus pada elemen tersebut.
     - **`text-align: center;`**: Properti CSS yang berfungsi untuk membuat posisi teks berada di tengah halaman (*center alignment*).
     - **`color: #ccd8e4;`**: Properti CSS untuk menentukan warna teks menggunakan kode heksadesimal, di mana `#ccd8e4` menghasilkan warna abu-abu kebiruan yang lembut (*light steel/grayish blue*).
@@ -64,7 +64,6 @@
 5. Membuat CSS Eksternal
 
     <img src="images/Gambar8.jpg" width="250">
-
     ## Penjelasan Kode CSS (Navigasi):
     - **`nav { background: #20A759; color: #fff; padding: 10px; }`**: Mengatur wadah menu navigasi (`<nav>`) dengan latar belakang warna hijau cerah (`#20A759`), warna dasar teks putih (`#fff`), serta memberikan jarak ruang di dalam elemen sebesar 10 piksel agar terlihat rapi.
     - **`nav a { color: #fff; text-decoration: none; padding: 10px 20px; }`**: Mengatur tampilan setiap tautan (*link*) di dalam menu navigasi:
@@ -80,7 +79,6 @@
 6. Membuat tambahkan tag `<link>` untuk merujuk file css yang sudah dibuat pada bagian `<head>`
 
     <img src="images/Gambar10.jpg" width="250">
-
     ## Penjelasan Tag Link untuk CSS Eksternal
     - **`<link>`**: Tag HTML yang digunakan untuk menghubungkan dokumen HTML saat ini dengan sumber daya eksternal (seperti file *stylesheet* CSS). Tag ini diletakkan di dalam bagian `<head>`.
     - **`rel="stylesheet"`**: Atribut *relationship* yang mendefinisikan bahwa file yang dituju berfungsi sebagai lembar gaya (*stylesheet*) untuk mengatur tampilan halaman web.
@@ -94,11 +92,8 @@
     Selanjutnya, kita akan menambahkan CSS Selector menggunakan ID Selector dan Class Selector. Pada file `style_eksternal.css`, tambahkan kode berikut:
 
     <img src="images/Gambar12.jpg" width="250">
-    
-    ## Penjelasan Kode CSS Selector (ID dan Class Selector)
 
     ## Berikut adalah penjelasan fungsi dari setiap baris kode CSS Selector yang ditambahkan ke dalam file `style_eksternal.css`:
-
     ## 1. ID Selector (`#intro`)
     - **`#intro { background: #418fb1; border: 1px solid #099249; min-height: 100px; padding: 10px; }`**: Mengatur tampilan wadah elemen yang memiliki ID `intro`:
     - `background: #418fb1;`: Memberikan warna latar belakang biru muda.
