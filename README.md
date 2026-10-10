@@ -23,7 +23,6 @@
     <img src="images/Gambar2.jpg" width="250">
     <p>Berikut adalah penjelasan bagian per bagian dari kode dokumen HTML di atas:</p>
     - ** `<!DOCTYPE html>` & `<html lang="en">`**: Menunjukkan bahwa dokumen ini menggunakan standar HTML5 dengan bahasa utama bahasa Inggris.
-
     - ** `<head>`**: Bagian kepala dokumen yang berisi informasi pengaturan browser (seperti pengenal karakter UTF-8 dan ukuran layar/viewport) serta judul halaman web (`<title>`).
     - ** `<body>`**: Badan dokumen tempat seluruh konten yang akan tampil di layar browser diletakkan.
     - ** `<header>`**: Bagian kepala halaman yang membungkus judul utama web, yaitu _"CSS Internal dan Inline CSS"_. Di dalamnya terdapat tag `<i>` untuk membuat teks miring.
