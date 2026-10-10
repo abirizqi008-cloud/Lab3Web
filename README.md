@@ -125,7 +125,23 @@
 
     - Eksperimen pada ID Selector (#intro)
 
-    <img src="images/Gambar14.jpg" width="250">
+        <img src="images/Gambar14.jpg" width="250">
 
     ## Hasil
     <img src="images/Gambar15.jpg" width="250">
+
+2. Apa perbedaan pendeklarasian CSS elemen h1 {...} dengan #intro h1 {...}? berikan penjelasannya!
+    Jawab:
+
+    ## Perbedaan Penulisan `h1` dan `#intro h1` pada CSS
+    Berikut adalah perbedaan mendasar antara pendeklarasian elemen `h1 {...}` secara umum dengan `#intro h1 {...}` (Descendant Selector):
+    - **`h1 { ... }` (Global / Elemen Selector):**
+    - Berfungsi untuk menargetkan **seluruh** elemen judul `<h1>` yang ada di dalam dokumen HTML, di mana pun elemen tersebut diletakkan.
+    - Setiap perubahan properti di dalam blok ini (seperti ukuran font, warna, atau perataan teks) akan diterapkan secara seragam ke semua tag `<h1>` pada halaman web.
+
+    - **`#intro h1 { ... }` (Descendant Selector / Spesifik):**
+    - Berfungsi untuk menargetkan elemen judul `<h1>` yang **hanya berada di dalam** wadah atau elemen pembungkus yang memiliki ID `intro` (`id="intro"`).
+    - Bersifat lebih spesifik dan memiliki tingkat prioritas (*specificity*) yang lebih tinggi. Properti di dalam blok ini hanya akan mengubah tampilan `<h1>` di dalam area `#intro` saja, tanpa memengaruhi elemen `<h1>` lain di luar bagian tersebut.
+    
+    ### Contoh Kasus Penggunaan:
+    Jika Anda ingin membuat judul utama halaman berwarna biru di bagian *header*, Anda cukup menggunakan `h1 { color: #0F189F; }`. Namun, jika khusus untuk judul di dalam kotak perkenalan `#intro` Anda ingin mengubah warnanya menjadi putih (`color: #fff;`) dan posisinya rata kiri (`text-align: left;`), maka pendeklarasian `#intro h1` digunakan untuk menimpa atau mengkhususkan gaya terse
