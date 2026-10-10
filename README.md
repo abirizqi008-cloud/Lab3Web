@@ -13,7 +13,7 @@
 2. Mahasiswa mampu memahami aturan penulisan pada CSS
 3. Mahasiswa mampu membuat pengaturan CSS pada HTML
 
-## langkah-langkah Praktikum
+## Langkah-langkah Praktikum
 1. Membuat Repository baru yang bernama Lab3Web
 
     <img src="images/Gambar1.jpg" width="250">
@@ -120,4 +120,12 @@
 ## Hasil
 <img src="images/Gambar13.jpg" width="250">
 
+## Pertanyaan dan Tugas
+1. Lakukan eksperimen dengan mengubah dan menambah properti dan nilai pada kode CSS dengan mengacu pada CSS Cheat Sheet yang diberikan pada file terpisah dari modul ini.
 
+    - Eksperimen pada ID Selector (#intro)
+
+    <img src="images/Gambar14.jpg" width="250">
+
+    ## Hasil
+    <img src="images/Gambar15.jpg" width="250">
