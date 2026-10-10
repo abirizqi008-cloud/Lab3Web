@@ -14,11 +14,11 @@
 3. Mahasiswa mampu membuat pengaturan CSS pada HTML
 
 ## Langkah-langkah Praktikum
-## 1. Membuat Repository baru yang bernama Lab3Web
+1. ## Membuat Repository baru yang bernama Lab3Web
 
     <img src="images/Gambar1.jpg" width="250">
 
-## 2. Membuat dokumen HTML.
+2. ## Membuat dokumen HTML.
 
     <img src="images/Gambar2.jpg" width="250">
 
@@ -36,7 +36,7 @@
 ## Hasil
 <img src="images/Gambar3.jpg" width="250">
 
-## 3. Mendeklarasi CSS Internal
+3. ## Mendeklarasi CSS Internal
 
     <img src="images/Gambar4.jpg" width="250">
 
@@ -49,7 +49,7 @@
 ## Hasil
 <img src="images/Gambar5.jpg" width="250">
 
-## 4. Membuat Inline CSS
+4. ## Membuat Inline CSS
 
     <img src="images/Gambar6.jpg" width="250">
 
@@ -61,7 +61,7 @@
 ## Hasil
 <img src="images/Gambar7.jpg" width="250">
 
-## 5. Membuat CSS Eksternal
+5. ## Membuat CSS Eksternal
 
     <img src="images/Gambar8.jpg" width="250">
     ## Penjelasan Kode CSS (Navigasi):
@@ -76,7 +76,7 @@
 ## Hasil
 <img src="images/Gambar9.jpg" width="250">
 
-## 6. Membuat tambahkan tag `<link>` untuk merujuk file css yang sudah dibuat pada bagian `<head>`
+6. ## Membuat tambahkan tag `<link>` untuk merujuk file css yang sudah dibuat pada bagian `<head>`
 
     <img src="images/Gambar10.jpg" width="250">
     ## Penjelasan Tag Link untuk CSS Eksternal
@@ -88,7 +88,7 @@
 ## Hasil
 <img src="images/Gambar11.jpg" width="250">
 
-## 7. Menambahkan CSS Selector
+7. ## Menambahkan CSS Selector
     Selanjutnya, kita akan menambahkan CSS Selector menggunakan ID Selector dan Class Selector. Pada file `style_eksternal.css`, tambahkan kode berikut:
 
     <img src="images/Gambar12.jpg" width="250">
@@ -121,7 +121,7 @@
 <img src="images/Gambar13.jpg" width="250">
 
 ## Pertanyaan dan Tugas
-## 1. Lakukan eksperimen dengan mengubah dan menambah properti dan nilai pada kode CSS dengan mengacu pada CSS Cheat Sheet yang diberikan pada file terpisah dari modul ini.
+1. ## Lakukan eksperimen dengan mengubah dan menambah properti dan nilai pada kode CSS dengan mengacu pada CSS Cheat Sheet yang diberikan pada file terpisah dari modul ini.
 
     - Eksperimen pada ID Selector (#intro)
 
@@ -130,7 +130,7 @@
     ## Hasil
     <img src="images/Gambar15.jpg" width="250">
 
-## 2. Apa perbedaan pendeklarasian CSS elemen h1 {...} dengan #intro h1 {...}? berikan penjelasannya!
+2. ## Apa perbedaan pendeklarasian CSS elemen h1 {...} dengan #intro h1 {...}? berikan penjelasannya!
 
     Jawab:
 
@@ -147,7 +147,7 @@
     ### Contoh Kasus Penggunaan:
     Jika Anda ingin membuat judul utama halaman berwarna biru di bagian *header*, Anda cukup menggunakan `h1 { color: #0F189F; }`. Namun, jika khusus untuk judul di dalam kotak perkenalan `#intro` Anda ingin mengubah warnanya menjadi putih (`color: #fff;`) dan posisinya rata kiri (`text-align: left;`), maka pendeklarasian `#intro h1` digunakan untuk menimpa atau mengkhususkan gaya tersebut.
 
-## 3.  ## Apabila ada deklarasi CSS secara internal, lalu ditambahkan CSS eksternal dan inline CSS pada elemen yang sama. Deklarasi manakah yang akan ditampilkan pada browser? Berikan penjelasan dan contohnya!
+3.  ## Apabila ada deklarasi CSS secara internal, lalu ditambahkan CSS eksternal dan inline CSS pada elemen yang sama. Deklarasi manakah yang akan ditampilkan pada browser? Berikan penjelasan dan contohnya!
 
     Jawab:
 
@@ -173,7 +173,7 @@
     **Hasil di Browser:**
     Teks judul akan tampil dengan warna **merah (`red`)**. Hal ini karena **Inline CSS** memiliki tingkat prioritas tertinggi dan mengabaikan aturan warna biru yang didefinisikan pada CSS Internal maupun Eksternal.
 
-## 4. Apabila sebuah elemen HTML memiliki atribut **ID** dan **Class** secara bersamaan (contoh: `<p id="paragraf-1" class="text-paragraf">`), dan kedua selector tersebut sama-sama mendeklarasikan properti CSS yang sama (misalnya warna teks), maka browser akan menampilkan **deklarasi dari ID Selector**.
+4. ## Apabila sebuah elemen HTML memiliki atribut **ID** dan **Class** secara bersamaan (contoh: `<p id="paragraf-1" class="text-paragraf">`), dan kedua selector tersebut sama-sama mendeklarasikan properti CSS yang sama (misalnya warna teks), maka browser akan menampilkan **deklarasi dari ID Selector**.
 
     ## Penjelasan (Tingkat Spesifisitas / *Specificity*)
     Dalam aturan CSS, setiap jenis selector memiliki bobot atau nilai spesifisitas (*specificity*) yang berbeda-beda:
@@ -198,3 +198,7 @@
     #paragraf-1 {
     color: red;
     }
+
+
+## Hasil Akhir Praktikum 3
+<img src="images/Gambar15.jpg" width="250">
