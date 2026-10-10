@@ -131,6 +131,7 @@
     <img src="images/Gambar15.jpg" width="250">
 
 2. Apa perbedaan pendeklarasian CSS elemen h1 {...} dengan #intro h1 {...}? berikan penjelasannya!
+
     Jawab:
 
     ## Perbedaan Penulisan `h1` dan `#intro h1` pada CSS
@@ -142,6 +143,32 @@
     - **`#intro h1 { ... }` (Descendant Selector / Spesifik):**
     - Berfungsi untuk menargetkan elemen judul `<h1>` yang **hanya berada di dalam** wadah atau elemen pembungkus yang memiliki ID `intro` (`id="intro"`).
     - Bersifat lebih spesifik dan memiliki tingkat prioritas (*specificity*) yang lebih tinggi. Properti di dalam blok ini hanya akan mengubah tampilan `<h1>` di dalam area `#intro` saja, tanpa memengaruhi elemen `<h1>` lain di luar bagian tersebut.
-    
+
     ### Contoh Kasus Penggunaan:
-    Jika Anda ingin membuat judul utama halaman berwarna biru di bagian *header*, Anda cukup menggunakan `h1 { color: #0F189F; }`. Namun, jika khusus untuk judul di dalam kotak perkenalan `#intro` Anda ingin mengubah warnanya menjadi putih (`color: #fff;`) dan posisinya rata kiri (`text-align: left;`), maka pendeklarasian `#intro h1` digunakan untuk menimpa atau mengkhususkan gaya terse
+    Jika Anda ingin membuat judul utama halaman berwarna biru di bagian *header*, Anda cukup menggunakan `h1 { color: #0F189F; }`. Namun, jika khusus untuk judul di dalam kotak perkenalan `#intro` Anda ingin mengubah warnanya menjadi putih (`color: #fff;`) dan posisinya rata kiri (`text-align: left;`), maka pendeklarasian `#intro h1` digunakan untuk menimpa atau mengkhususkan gaya tersebut.
+
+3. Apabila ada deklarasi CSS secara internal, lalu ditambahkan CSS eksternal dan inline CSS pada elemen yang sama. Deklarasi manakah yang akan ditampilkan pada browser? Berikan penjelasan dan contohnya!
+
+    Jawab:
+
+    ## Prioritas Penerapan CSS (Inline, Internal, dan Eksternal)
+    Apabila sebuah elemen HTML diberikan gaya (*style*) melalui **Inline CSS**, **Internal CSS**, dan **Eksternal CSS** secara bersamaan, browser akan menentukan gaya mana yang akan ditampilkan berdasarkan tingkat prioritas (*Specificity* dan *Cascade*).
+    
+    ## Urutan Prioritas CSS (Dari yang Paling Kuat ke Lemah)
+    1. **Inline CSS (Prioritas Tertinggi)**
+        - Ditulis secara langsung di dalam elemen HTML menggunakan atribut `style="..."`.
+        - Gaya ini akan selalu diutamakan dan menimpa gaya apa pun yang ada di dalam Internal maupun Eksternal CSS.
+
+    2. **Internal CSS & Eksternal CSS (Tergantung Urutan Pemuatan)**
+        - Jika konflik terjadi antara Internal CSS (dalam tag `<style>`) dan Eksternal CSS (lewat tag `<link>`), maka aturan yang **dibaca atau dimuat paling akhir** oleh browser akan mendominasi (*Cascading order*).
+    
+    ---
+    
+    ## Contoh Kasus
+    
+    Misalkan kita memiliki elemen judul `<h1>` dengan kondisi kode sebagai berikut:
+    - **Di CSS Eksternal/Internal**: Diberikan warna biru (`color: blue;`).
+    - **Di Inline CSS**: Ditulis langsung pada elemen `<h1 style="color: red;">Halo Dunia</h1>`.
+    
+    **Hasil di Browser:**
+    Teks judul akan tampil dengan warna **merah (`red`)**. Hal ini karena **Inline CSS** memiliki tingkat prioritas tertinggi dan mengabaikan aturan warna biru yang didefinisikan pada CSS Internal maupun Eksternal.
