@@ -64,6 +64,7 @@
 5. ## Membuat CSS Eksternal
 
     <img src="images/Gambar8.jpg" width="250">
+
     ## Penjelasan Kode CSS (Navigasi):
     - **`nav { background: #20A759; color: #fff; padding: 10px; }`**: Mengatur wadah menu navigasi (`<nav>`) dengan latar belakang warna hijau cerah (`#20A759`), warna dasar teks putih (`#fff`), serta memberikan jarak ruang di dalam elemen sebesar 10 piksel agar terlihat rapi.
     - **`nav a { color: #fff; text-decoration: none; padding: 10px 20px; }`**: Mengatur tampilan setiap tautan (*link*) di dalam menu navigasi:
@@ -79,6 +80,7 @@
 6. ## Membuat tambahkan tag `<link>` untuk merujuk file css yang sudah dibuat pada bagian `<head>`
 
     <img src="images/Gambar10.jpg" width="250">
+    
     ## Penjelasan Tag Link untuk CSS Eksternal
     - **`<link>`**: Tag HTML yang digunakan untuk menghubungkan dokumen HTML saat ini dengan sumber daya eksternal (seperti file *stylesheet* CSS). Tag ini diletakkan di dalam bagian `<head>`.
     - **`rel="stylesheet"`**: Atribut *relationship* yang mendefinisikan bahwa file yang dituju berfungsi sebagai lembar gaya (*stylesheet*) untuk mengatur tampilan halaman web.
